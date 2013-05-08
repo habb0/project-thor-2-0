@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThorServer", "ThorServer\ThorServer.csproj", "{7F7B35C5-2B15-489F-BAEE-9256E169EB57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThorHelper", "ThorHelper\ThorHelper.csproj", "{7A4CF577-A9FC-4F92-8C66-73DA7A2E21A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThorHousekeeping", "ThorHousekeeping\ThorHousekeeping.csproj", "{3AE80F93-88A4-4B60-9EA2-5D4EEE94D16D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F7B35C5-2B15-489F-BAEE-9256E169EB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7B35C5-2B15-489F-BAEE-9256E169EB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7B35C5-2B15-489F-BAEE-9256E169EB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7B35C5-2B15-489F-BAEE-9256E169EB57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A4CF577-A9FC-4F92-8C66-73DA7A2E21A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4CF577-A9FC-4F92-8C66-73DA7A2E21A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4CF577-A9FC-4F92-8C66-73DA7A2E21A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4CF577-A9FC-4F92-8C66-73DA7A2E21A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE80F93-88A4-4B60-9EA2-5D4EEE94D16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE80F93-88A4-4B60-9EA2-5D4EEE94D16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE80F93-88A4-4B60-9EA2-5D4EEE94D16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE80F93-88A4-4B60-9EA2-5D4EEE94D16D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

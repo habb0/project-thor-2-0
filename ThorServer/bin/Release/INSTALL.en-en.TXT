@@ -1,0 +1,44 @@
+﻿#######################
+# Project Thor Installation Instructions
+# Written By: Joe Hegarty
+# Locale: en-en (English England)
+#######################
+
+
+# Required Software for Server
+
+Platform: Microsoft Windows XP, Vista, Server 2003 or Server 2008
+DotNET Framework: Microsoft .NET 2.0 and 3.5
+Database: Microsoft SQL Server 2000, MSDE, 2005, 2005 Express or 2008 (2008 Untested) with SQL Authentication Enabled
+
+# Additional software required for Housekeeping
+IIS: V5.1, 6 or 7
+
+#Guide
+
+1) Install Microsoft .NET Frameworks required. You need to have 3.5 otherwise the server will not run correctly.
+
+2) Install Microsoft SQL. Be sure to enable SQL Authentication!
+
+3) Create a blank database for Thor to use (Use the SQL management studio to make this easier)
+
+4) Create a user which is set up for SQL Authentication (not windows authentication), grant it db_owner access to the database created above.
+
+5) Extract the ThorServerxxx.zip to a folder in a convenient location (we will assume this is C:\thor\bin\ for the purposes of this guide).
+
+6) You now need to register Thor as a windows service. On Windows Vista it is achieved as so (be sure to adjust the paths as required):
+	1. Start -> Run -> cmd
+	2. cd C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727
+	3. InstallUtil C:\thor\bin\ThorServer.exe
+	4. Enter the user details that you want the service to run under (Note: You need to include the machine name ie. ASGARD\Joeh)
+	5. If succesful you should see the message "The Commit phase completed successfully" and  "The transacted install has completed."
+	
+7) You will now need to run the database configuration file Schema.sql. The easiest way to do this is open SQL Management studio, right click on the database and click "New Query". Paste the contents of Schema.SQL in the window and hit F5 to execute.
+ 
+8) Go to the folder when you extracted ThorServerxxx.zip and open the file "Settings.conf". You will need to change the database settings to the relevant information set up earlier.
+
+9) You may now tweak values in Settings.conf and UserSettings.conf if there is anything you need to change.
+
+10) Start the service by running 'net start "Thor Server"' from the command line 
+
+11) If you have any problems I suggest you post on the RageZone development thread at http://forum.ragezone.com/showthread.php?t=43819 hopefully myself or someone else can help.

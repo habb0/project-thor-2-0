@@ -1,0 +1,29 @@
+﻿Command - Right - Description
+
+:alert [user] [message] - fuse_alert - Alerts a user
+
+:kick [user] [message] - fuse_kick - Kicks a user from the room and alerts them
+
+:softkick [user] - fuse_kick - Kicks a user from the room
+
+:shutup [user] - fuse_mute - Mutes the targetted user
+
+:unmute [user] - fuse_mute - Unmutes the targetted user
+
+:roomalert [message] - fuse_room_alert - Alerts all users in the room
+
+:roomkick [message] - fuse_room_kick - Kicks all users in the room and alerts them
+
+:roomshutup - fuse_room_mute - Mutes all users in the room
+
+:roomunmute - fuse_room_mute - Unmutes all users in the room
+
+:ban [user] [hours] [message] - fuse_ban - Bans the user for the specified number of hours
+
+:superban [user] [hours] [message] - fuse_ban - Bans the user for the specified number of hours, also bans machine and IP
+
+:servcast [message] - fuse_admin_servcast - Alerts all users connected to the server
+
+:whereis [user] - fuse_whereis - Tells you where on the game a player is
+
+:who - fuse_who - Displays a list of users currently online

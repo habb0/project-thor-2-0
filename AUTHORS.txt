@@ -1,0 +1,43 @@
+﻿AUTHORS
+Thor Server Project
+Copyright 2008 Joe Hegarty
+
+
+##############
+Programming
+##############
+
+Adus / Joeh [Joe Hegarty]
+All code is written by Joeh unless expressly stated below!
+Some code is derived from Joeh's old V9 server "Orithia" (though very little)
+
+##############
+Thor CMS
+##############
+
+Enumeric / Dan
+
+
+##############
+Testers
+##############
+
+Myrax [Dom]
+Jeax [Josh] 
+Bam [Gordon]
+Trevo [Trevor]
+
+
+##############
+Other
+##############
+
+Office.Boy [Mike] - Client
+
+
+##############
+Third-Party Code
+##############
+
+Wall Item Position Check - Inspired by Holograph Emulator
+Pathfinding - Some parts inspired by code written by Gustavo Franco

@@ -1,0 +1,368 @@
+﻿/* This CSS Sheet has been created ONLY for Mini-I.FM to use. */
+
+BODY {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	}
+
+input, textarea, select, option
+{
+	font-family: sans-serif !important;
+	font-size: 10px;
+}
+
+TD {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	}
+
+.RED { color: #FF0000; }
+
+#login {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	}
+
+
+#componentcontent {
+	position: absolute;
+	left: 220px;
+	top: 70px;
+	width: 600px;
+	}
+
+#navigation_toptabs {
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	width: 100%;
+	}
+	
+#navigation_boxes {
+	position: absolute;
+	left: 10px;
+	top: 70px;
+	width: 200px;
+	}
+
+A:link    {color: #000099; }
+A:visited {color: #666666; }
+
+.navi1   {color: #FFFFFF; background-color: #0066CC; font-weight:bold;}
+A.navi1:link   {color: #FFFFFF; background-color: #0066CC; font-weight:bold;}
+A.navi1:visited   {color: #FFFFFF; background-color: #0066CC; font-weight:bold;}
+
+.navi2   {color: #bbbbbb; background-color: #000099; font-weight:bold;}
+A.navi2:link   {color: #bbbbbb; background-color: #000099; font-weight:bold;}
+A.navi2:visited   {color: #bbbbbb; background-color: #000099; font-weight:bold;}
+
+A.red	{color: #000099; background-color: red;}
+A.yellow	{color: #000099; background-color: yellow;}
+A.silver	{color: #000099; background-color: silver;}
+A.white	{color: #000099; background-color: white;}
+
+SpAN.SMALL {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;}
+SpAN.WHITE {font-family: Verdana, Arial, Helvetica, sans-serif; color: #FFFFFF; font-size: 10px;  font-weight:bold;}
+SpAN.SMALLC {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; text-align: center;}
+SpAN.SMALLB {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight:bold;}
+SpAN.NORMAL {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;}
+SpAN.TEXT {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;}
+SpAN.NAVIHEAD {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:bold;}
+SpAN.HEADLINE {font-size: 18px; font-weight:900; font-family: Arial, sans-serif;}
+SpAN.SUBHEADLINE {font-size: 16px; font-weight:900; font-family: Arial, sans-serif;}
+
+SpAN.NOTIFY {font-size: 14px; font-weight:900; font-family: Arial, sans-serif; color: #FF0000;}
+
+SpAN.SMALLHEADLINE {font-size: 12px; font-weight:900; font-family: Arial, sans-serif;}
+SpAN.INGRESS {font-size: 10px; font-style:italic; font-family: Verdana, Arial, Helvetica, sans-serif;}
+SpAN.TELETYpE {font-size: 10px; font-family: Courier, serif;}
+
+.error {
+	font-weight: bold;
+	color: #ff0000;
+}
+  
+DIV {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	}
+
+A:link.menu {color: #000000; text-decoration: none;}
+A:visited.menu {color: #000000; text-decoration: none;}
+A:active.menu {color: #0000ff; text-decoration: none;}
+A:hover.menu {color: #0000ff; text-decoration: none;}
+
+/* display tag 0.x */
+
+tr.tableRowHeader {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: #ffcc00;
+}
+td.tableCell_header {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+a.tableCell {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  background-color: #ffcc00;
+}
+a.tableCell:hover {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+  background-color: #ffcc00;
+}
+
+a.tableCellHeader {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  background-color: #ffcc00;
+}
+a.tableCellHeader:hover {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+  background-color: #ffcc00;
+}
+tr.tableRowOdd {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+
+  background-color: #ffffff
+}
+tr.tableRowEven {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+
+  background-color: #ffeeaa
+}
+td.tableCell {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+
+/* display tag 1.x */
+
+table.display
+{
+    border-spacing: 1px;
+    border-collapse: separate;
+}
+
+table.display td, table.display th
+{
+	padding: 2px;
+	margin: 0;
+	vertical-align: top;
+}
+
+table.display th {
+  font-weight: bold;
+  background-color: #ffcc00;
+  color: black;
+}
+
+table.display th a:link, table.display th a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  background-color: #ffcc00;
+}
+table.display th a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+  background-color: #ffcc00;
+}
+
+table.display tr.odd {
+  background-color: #ffffff
+}
+table.display tr.even {
+  background-color: #ffeeaa
+}
+
+
+table.displaynested
+{
+    border-spacing: 1px;
+    border-collapse: separate;
+}
+
+table.displaynested td, table.displaynested th
+{
+	padding: 2px;
+	margin: 0;
+	vertical-align: top;
+}
+
+table.displaynested th {
+  font-weight: bold;
+  background-color: #CCC;
+  color: black;
+}
+
+table.displaynested th a:link, table.displaynested th a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  background-color: #CCC;
+}
+table.displaynested th a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+  background-color: #CCC;
+}
+
+table.displaynested tr.odd {
+  background-color: #EEE;
+}
+table.displaynested tr.even {
+  background-color: #CCC;
+}
+
+div.exportlinks {
+  padding-top: 8px;
+}
+
+/*
+ * content editor javascript tree menu
+ */
+.TreeviewSpanArea a:link, .TreeviewSpanArea a:visited
+{
+	font-size: 11px;
+	text-decoration: none;
+	color: #666;
+}
+
+.TreeviewSection
+{
+	color: #906;
+}
+
+.TreeviewSubsection
+{
+	color: #222;
+}
+
+.Treeviewpage
+{
+	color: #660;
+}
+
+
+.TreeviewSpanArea a:hover
+{
+	color: #000;
+	background-color: #EDEDED;
+}
+
+.errorLabel {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.errorMessage {
+	color: #ff0000;
+	font-weight: bold;
+}
+.goaheadMessage {
+	color: #00FF00;
+	font-weight: bold;
+}
+
+
+/*
+ * content editor tabs
+ */
+.edMenu ul
+{
+	padding-left: 5px;
+	margin: 0;
+}
+
+.edMenu ul li
+{
+	display: inline;
+}
+
+.edMenu ul li a
+{
+	padding: 3px 7px 3px 7px;
+	color: #000;
+	border-color: #CCC;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	text-decoration: none;
+	margin-left: -1px;
+	margin-right: 5px;
+	float: left;
+}
+
+#edpage, #edContent, #edBorderBox
+{
+	clear: both;
+	padding: 7px;
+	border-color: #DDD;
+	border-width: 1px;
+	border-style: solid;
+	margin-bottom: 14px;
+}
+
+#edContent h2
+{
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#edpage div
+{
+	display: none;
+}
+
+#edpage #edpageVersionspane
+{
+	display: block;
+	height: 100px;
+	overflow: auto;
+}
+
+/*
+ * subnavi: server and local dates
+ */
+
+div#dateInfo
+{
+	border: 1px solid #666;
+	color: #454545;
+	font-size: 9px;
+	padding: 4px 4px 0 4px;
+	margin-bottom: 12px;
+	width: 200px;
+}
+
+div#dateInfo p
+{
+	margin: 0 0 4px 0;
+}
+p {
+padding-top:0;
+padding-bottom:0;
+margin-bottom:0;
+margin-top:0; }
+
+/* This sheet is property of VERTIGOmedia and Mini-I-Media, it is only for MINI-I.FM to use. Any other sites using the file without permission can be shut down without notice */

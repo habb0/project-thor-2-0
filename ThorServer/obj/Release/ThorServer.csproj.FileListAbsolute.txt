@@ -1,0 +1,21 @@
+C:\thor\ThorServer\bin\Release\INSTALL.da-dk.txt
+C:\thor\ThorServer\bin\Release\INSTALL.en-en.TXT
+C:\thor\ThorServer\bin\Release\INSTALL.nb-no.txt
+C:\thor\ThorServer\bin\Release\Data\Schema.sql
+C:\thor\ThorServer\bin\Release\Settings.conf
+C:\thor\ThorServer\bin\Release\UserSettings.conf
+C:\thor\ThorServer\bin\Release\ThorServer.exe.manifest
+C:\thor\ThorServer\bin\Release\ThorServer.application
+C:\thor\ThorServer\bin\Release\ThorServer.exe
+C:\thor\ThorServer\bin\Release\ThorServer.pdb
+C:\thor\ThorServer\obj\Release\ResolveAssemblyReference.cache
+C:\thor\ThorServer\obj\Release\ThorServer.Language.resources
+C:\thor\ThorServer\obj\Release\ThorServer.ThorServiceInstaller.resources
+C:\thor\ThorServer\obj\Release\ThorServer.ThorService.resources
+C:\thor\ThorServer\obj\Release\ThorServer.csproj.GenerateResource.Cache
+C:\thor\ThorServer\obj\Release\ThorServer.exe.manifest
+C:\thor\ThorServer\obj\Release\ThorServer.application
+C:\thor\ThorServer\obj\Release\ThorServer.exe
+C:\thor\ThorServer\obj\Release\ThorServer.pdb
+E:\Program Files\EasyPHP1-8\www\ThorServer\obj\Release\ThorServer.exe
+E:\Program Files\EasyPHP1-8\www\ThorServer\obj\Release\ThorServer.pdb

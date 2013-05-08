@@ -1,0 +1,232 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HousekeepingLayout.master.cs"
+    Inherits="ThorHousekeeping.HousekeepingLayout" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href="res/style.css" rel="stylesheet" type="text/css">
+    <title>Housekeeping</title>
+</head>
+<body>
+    <div id="mainLayer" style="position: absolute; left: 219px; top: 60px; width: 723px;
+        height: 725px; z-index: 1">
+        <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="cntPageContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </form>
+    </div>
+    <strong>Welcome</strong>
+    <asp:Label ID="lblUserName" runat="server" Text="Label"></asp:Label><br>
+    <table width="936" align="left" cellspacing="1">
+        <tbody>
+            <tr>
+                <td width="930">
+                    <div align="left">
+                        <table bgcolor="#000000" cellpadding="0" cellspacing="0" width="931">
+                            <tbody>
+                                <tr>
+                                    <td bgcolor="blue">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <%
+        if (HasRight("fuse_housekeeping_cats_moderation"))
+        {
+    %>
+    <table bgcolor="#000000" cellpadding="4" cellspacing="1" width="187">
+        <tbody>
+            <tr>
+                <td width="175" bgcolor="blue">
+                    <span class="WHITE">Moderation</span>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <p>
+                        <%
+                            if (HasRight("fuse_alert"))
+                            {
+                        %>
+                        <a href="./RemoteAlert.aspx">Remote Alert</a><br>
+                        <%
+                            }
+                        %>
+                        <%
+                            if (HasRight("fuse_kick"))
+                            {
+                        %>
+                        <a href="./RemoteKick.aspx">Remote Kick</a><br>
+                        <%
+                            }
+                        %>
+                        <%
+                            if (HasRight("fuse_ban"))
+                            {
+                        %>
+                        <a href="./RemoteBan.aspx">Remote Ban</a><br>
+                        <%
+                            }
+                        %>
+                        <%
+                            if (HasRight("fuse_admin_servcast"))
+                            {
+                        %>
+                        <a href="./RemoteServcast.aspx">Remote Servcast</a><br>
+                        <%
+                            }
+                        %>
+                    </p>
+                    <p>
+                        <br>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <%
+        }
+    %>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <%
+        if (HasRight("fuse_housekeeping_cats_users"))
+        {
+    %>
+    <table bgcolor="#000000" cellpadding="4" cellspacing="1" width="187">
+        <tbody>
+            <tr>
+                <td width="175" bgcolor="blue">
+                    <span class="WHITE">Users</span>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <p>
+                        <%
+                            if (HasRight("fuse_housekeeping_user_lookup"))
+                            {
+                        %>
+                        <a href="./UserLookup.aspx">User Search</a><br>
+                        <%
+                            }
+                        %>
+                        <%
+                            if (HasRight("fuse_housekeeping_user_changerole"))
+                            {
+                        %>
+                        <a href="./RoleChange.aspx">Role Change Tool</a><br>
+                        <%
+                            }
+                        %>
+                        <%
+                            if (HasRight("fuse_housekeeping_user_changename"))
+                            {
+                        %>
+                        <a href="./NameChange.aspx">Name Change Tool</a><br>
+                        <%
+                            }
+                        %>
+                        <%
+                            if (HasRight("fuse_housekeeping_user_changeclub"))
+                            {
+                        %>
+                        <a href="./ClubChange.aspx">Club Tool</a><br>
+                        <%
+                            }
+                        %>
+                        <%
+                            if (HasRight("fuse_housekeeping_user_changecredits"))
+                            {
+                        %>
+                        <a href="./CreditChange.aspx">Credits Tool</a><br>
+                        <%
+                            }
+                        %>
+                        <%
+                            if (HasRight("fuse_housekeeping_user_referraltool"))
+                            {
+                        %>
+                        <a href="./ReferralTool.aspx">Referral Tool</a><br>
+                        <%
+                            }
+                        %>
+                    </p>
+                    <p>
+                        <br>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <%
+        }
+    %>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <%
+        if (HasRight("fuse_housekeeping_cats_economy"))
+        {
+    %>
+    <table bgcolor="#000000" cellpadding="4" cellspacing="1" width="187">
+        <tbody>
+            <tr>
+                <td width="175" bgcolor="blue">
+                    <span class="WHITE">Economy & Catalogue</span>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff">
+                    <p>
+                        <%
+                            if (HasRight("fuse_housekeeping_economy_createvoucher"))
+                            {
+                        %>
+                        <a href="./CreateVoucher.aspx">Create Voucher Code</a><br>
+                        <%
+                            }
+                        %>
+                        <%
+                            if (HasRight("fuse_housekeeping_economy_spawnfurni"))
+                            {
+                        %>
+                        <a href="./SpawnFurni.aspx">Spawn Furniture</a><br>
+                        <%
+                            }
+                        %>
+                    </p>
+                    <p>
+                        <br>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <%
+        }
+    %>
+</body>
+</html>

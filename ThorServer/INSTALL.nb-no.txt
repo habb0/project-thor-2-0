@@ -1,0 +1,44 @@
+﻿#######################
+# Project Thor Installation Instructions
+# Written By: Joe Hegarty
+# Locale: nb-no (Norwegian Bokmål Norway)
+#######################
+
+
+# Required Software for Server
+
+Platform: Microsoft Windows XP, Vista, Server 2003 or Server 2008
+DotNET Framework: Microsoft .NET 2.0 and 3.5
+Database: Microsoft SQL Server 2000, MSDE, 2005, 2005 Express or 2008 (2008 Untested) with SQL Authentication Enabled
+
+# Additional software required for Housekeeping
+IIS: V5.1, 6 or 7
+
+#Veiledning
+
+1) Installer Microsoft .NET Frameworks. Du trenger å ha versjon 3.5 ellers vil serveren kjøre ustabilt.
+
+2) Installer Microsoft SQL. Vær sikker på å aktivere SQL godkjenningen!
+
+3) Lag en blank database til Thor for å bruke. (Bruk SQL management studio for å gjøre dette lettere)
+
+4) Lag en bruker som er satt opp for SQL godkjenningen (ikke Windows godkjenningen), gi db_owner tilgang til databasen som er opprettet ovenfor.
+
+5) Pakk ut ThorServerxxx.zip til en mappe, til en logisk plassering (vi vil anta det er C:\thor\bin\ for meningen av denne veiledningen).
+
+6) Du trenger nå å registrere Thor som en Windows tjeneste. På Windows Vista er det allerede slikt (vær sikker på å innstille stiene som trengs):
+	1. Start -> Run -> cmd
+	2. cd C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727
+	3. InstallUtil C:\thor\bin\ThorServer.exe
+	4. Fyll inn bruker detaljene som du vil denne tjenesten skal kjøre som (Noter: Du vil også trenge å fylle inn datamaskinavn feks. ASGARD\Joeh)
+	5. Om suksessfullt, vil du se denne meldingen "Innleggelse-fasen fullført suksessfullt" og "Den foretatte installasjonen er fullført."
+	
+7) Du vil nå trenge å kjøre database konfigurasjonsfilen Schema.sql. Den letteste måten å gjøre dette på er å åpne SQL Management Studio, høyreklikk på databasen og klikk "Ny forespørsel". Lim inn innholdet av Schema.SQL inn i vinduet og trykk F5 for å utføre.
+ 
+8) Gå til mappen hvor du pakket ut ThorServerxxx.zip og åpne filen "Settings.conf". Du vil trenge å skifte på innstillingene i databasen til den relevante informasjonen satt opp tidligere.
+
+9) Du kan nå skifte verdiene i Settings.conf og UserSettings.conf om det er noe du trenger å skifte på.
+
+10) Start tjenesten ved å kjøre 'net start "Thor Server"' fra kommandolinjen. 
+
+11) Om du opplever problemer, foreslår jeg at du lager en post på the RageZone development tråden på http://forum.ragezone.com/showthread.php?t=43819 forhåpentligvis kan jeg eller noen andre hjelpe deg.

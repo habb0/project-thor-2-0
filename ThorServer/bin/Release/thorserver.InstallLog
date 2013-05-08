@@ -1,0 +1,26 @@
+﻿Assembly C:\thor\thorserver\bin\release\thorserver.exe wordt geïnstalleerd.
+Beïnvloede parameters:
+   logtoconsole = 
+   assemblypath = C:\thor\thorserver\bin\release\thorserver.exe
+   logfile = C:\thor\thorserver\bin\release\thorserver.InstallLog
+Service Thor Server installeren...
+EventLog-bron Thor Server in logboek Application maken...
+Assembly C:\thor\thorserver\bin\release\thorserver.exe ongedaan maken.
+Beïnvloede parameters:
+   logtoconsole = 
+   assemblypath = C:\thor\thorserver\bin\release\thorserver.exe
+   logfile = C:\thor\thorserver\bin\release\thorserver.InstallLog
+Het gebeurtenislogboek wordt teruggezet naar eerdere status voor bron Thor Server.
+Assembly c:\thor\thorserver\bin\release\thorserver.exe wordt geïnstalleerd.
+Beïnvloede parameters:
+   logtoconsole = 
+   assemblypath = c:\thor\thorserver\bin\release\thorserver.exe
+   logfile = c:\thor\thorserver\bin\release\thorserver.InstallLog
+Service Thor Server installeren...
+Service Thor Server is geïnstalleerd.
+EventLog-bron Thor Server in logboek Application maken...
+Assembly c:\thor\thorserver\bin\release\thorserver.exe wordt toegekend.
+Beïnvloede parameters:
+   logtoconsole = 
+   assemblypath = c:\thor\thorserver\bin\release\thorserver.exe
+   logfile = c:\thor\thorserver\bin\release\thorserver.InstallLog

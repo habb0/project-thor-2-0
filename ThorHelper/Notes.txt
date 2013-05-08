@@ -1,0 +1,9 @@
+﻿Just somewhere I can write random crap during dev.
+
+* Added a fix to allow non-stackable items to be placed again
+* Reintroduced the rotation checking code to the new furni movement
+* Fixed a bug with rollers allowing items to be walkable
+* Fixed a bug where rollers could be placed on rugs
+* Fixed a bug where multi-tile items could be placed off the room
+* IP Address Limit now disconnects users
+* Max login tries is 3, users get disconnected if they exceed this

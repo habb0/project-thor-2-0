@@ -1,0 +1,42 @@
+﻿#######################
+# Project Thor Installation Instructions
+# Written By: Joe Hegarty
+# Locale: da-dk (Danish Denmark)
+# Translator: Luni
+#######################
+
+
+#Nødvendig Software til server
+
+Platform: Microsoft Windows XP, Vista, Server 2003 or Server 2008
+DotNET Framework: Microsoft .NET 2.0 and 3.5
+Database: Microsoft SQL Server 2000, MSDE, 2005, 2005 Express or 2008 (2008 Untested) with SQL Authentication Enabled
+
+#Guide
+
+1) Installering af Microsoft .NET Frameworks er nødvendigt. Version 3.5 er nødvendigt for at serveren kan køre stabilt.
+
+2) Installér Microsoft SQL. OBS! Vær sikker på at aktivere SQL Authentication!
+
+3) Lav en blank database til Thor (Brug SQL management studio for at gøre dette nemmere).
+
+4) Lav en bruger, som er sat up til SQL Authentication (ikke windows authentication), tillad db_owner adgang til databasen som lavet foroven.
+
+5) Udpak ThorServerxxx.zippen til en folder (Såsom C:\thor\bin\).
+
+6) Du er nødt til at registrere Thor som en windows service. I Windows Vista skal det gøres som følgende: (For at være sikker justér stiene efter behov):
+	1. Start -> Kør -> cmd
+	2. cd C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727
+	3. InstallUtil C:\thor\bin\ThorServer.exe
+	4. Indtast bruger detaljer som du vil have servicen til at køre under (OBS: Du skal inkludere maskinenavnet f.eks. ASGARD\Joeh)
+	5. Hvis du har gjort det rigtigt vil du se beskeden:"The Commit phase completed successfully" og "The transacted install has completed."
+	
+7) Du er nødsaget til at køre database konfigurations filen Schema.sql. Den nemmeste vej at gøre dette er open SQL Management studio, højreklik på database og klik "New Query". Paste indholdet af Schema.SQL i vinduet og tast F5 for at eksikvere.
+ 
+8) Gå til folderen efter udpakningen af ThorServerxxx.zip og åben filen "Settings.conf". Du skal ændre database indstillingerne til relevant information som du satte op tidligere.
+
+9) Du kan nu tweake values i settings.conf og UserSettings.conf hvis det er noget du ville ændre.
+
+10) Start applikationen ved at køre 'net start "Thor Server"' fra kommando linien.
+
+11) Hvis du måtte have nogen form for problemer, anbefalder vi at du kigger i følgende RageZone tråd på: http://forum.ragezone.com/showthread.php?t=43819. Her kan jeg personligt forhåbenbentlig hjælpe.

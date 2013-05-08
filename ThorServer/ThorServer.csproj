@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F7B35C5-2B15-489F-BAEE-9256E169EB57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThorServer</RootNamespace>
+    <AssemblyName>ThorServer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>760BA0C16588F26A5089FB45DFC10B6AD5EC6F7F</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ThorServer_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <PublishUrl>C:\code\Thor\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Logging.cs" />
+    <Compile Include="Core\Reactor.cs" />
+    <Compile Include="Core\ReactorDefaults.cs" />
+    <Compile Include="Data\Database.cs" />
+    <Compile Include="Data\GameConfig.cs" />
+    <Compile Include="Game\Catalogue\CatalogueInfo.cs" />
+    <Compile Include="Game\Catalogue\CatalogueManager.cs" />
+    <Compile Include="Game\Catalogue\CatalogueReactor.cs" />
+    <Compile Include="Game\External\ExternalManager.cs" />
+    <Compile Include="Game\Furni\FurniInfo.cs" />
+    <Compile Include="Game\Furni\FurniManager.cs" />
+    <Compile Include="Game\Furni\HandReactor.cs" />
+    <Compile Include="Game\Furni\TradeReactor.cs" />
+    <Compile Include="Game\GameManager.cs" />
+    <Compile Include="Game\Messenger\MessengerManager.cs" />
+    <Compile Include="Game\Messenger\MessengerReactor.cs" />
+    <Compile Include="Game\Misc\ChatFilter.cs" />
+    <Compile Include="Game\Misc\MiscManager.cs" />
+    <Compile Include="Game\Moderation\HousekeepingHandler.cs" />
+    <Compile Include="Game\Moderation\ModerationDatabase.cs" />
+    <Compile Include="Game\Moderation\ModerationHandler.cs" />
+    <Compile Include="Game\Moderation\ModerationLogCommand.cs" />
+    <Compile Include="Game\Moderation\ModeratorAlert.cs" />
+    <Compile Include="Game\Moderation\ModeratorBan.cs" />
+    <Compile Include="Game\Moderation\ModeratorCallForHelp.cs" />
+    <Compile Include="Game\Moderation\ModeratorKick.cs" />
+    <Compile Include="Game\Moderation\ModeratorReactor.cs" />
+    <Compile Include="Game\Moderation\ModeratorRoomAlert.cs" />
+    <Compile Include="Game\Moderation\ModeratorRoomKick.cs" />
+    <Compile Include="Game\Moderation\ModeratorRoomUnmute.cs" />
+    <Compile Include="Game\Moderation\ModeratorServcast.cs" />
+    <Compile Include="Game\Moderation\ModeratorShutup.cs" />
+    <Compile Include="Game\Moderation\ModeratorSoftkick.cs" />
+    <Compile Include="Game\Moderation\ModeratorUnmute.cs" />
+    <Compile Include="Game\Moderation\ModeratorRoomShutup.cs" />
+    <Compile Include="Game\Moderation\ModeratorWhereIs.cs" />
+    <Compile Include="Game\Moderation\ModeratorWho.cs" />
+    <Compile Include="Game\Rooms\FlatHandler.cs" />
+    <Compile Include="Game\Rooms\Interactor\Furni.cs" />
+    <Compile Include="Game\Rooms\Interactor\Mapping.cs" />
+    <Compile Include="Game\Rooms\Interactor\PlayerMovement.cs" />
+    <Compile Include="Game\Rooms\Interactor\PoolCamera.cs" />
+    <Compile Include="Game\Rooms\Interactor\Rollers.cs" />
+    <Compile Include="Game\Rooms\Reactors\LidoReactor.cs" />
+    <Compile Include="Game\Rooms\Reactors\PoolReactor.cs" />
+    <Compile Include="Game\Rooms\Reactors\PublicReactor.cs" />
+    <Compile Include="Game\Rooms\Reactors\RooftopReactor.cs" />
+    <Compile Include="Game\Rooms\Reactors\RoomCommonReactor.cs" />
+    <Compile Include="Game\Rooms\Navigator.cs" />
+    <Compile Include="Game\Rooms\Pathfinding\IPathFinder.cs" />
+    <Compile Include="Game\Rooms\Pathfinding\PathFinder.cs" />
+    <Compile Include="Game\Rooms\Pathfinding\PriorityQueueB.cs" />
+    <Compile Include="Game\Rooms\Reactors\FlatReactor.cs" />
+    <Compile Include="Game\Rooms\RoomInfo.cs" />
+    <Compile Include="Game\Rooms\RoomInstance.cs" />
+    <Compile Include="Game\Rooms\Interactor\RoomInteractor.cs" />
+    <Compile Include="Game\Rooms\RoomManager.cs" />
+    <Compile Include="Game\Rooms\RoomReactor.cs" />
+    <Compile Include="Game\Rooms\RoomUser.cs" />
+    <Compile Include="Game\Users\LoginReactor.cs" />
+    <Compile Include="Game\Users\RoleManager.cs" />
+    <Compile Include="Game\Users\UserInfo.cs" />
+    <Compile Include="Game\Users\UserManager.cs" />
+    <Compile Include="Game\Users\UserReactor.cs" />
+    <Compile Include="Game\Users\UserSettings.cs" />
+    <Compile Include="InstanceManager.cs" />
+    <Compile Include="Language.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Net\NetConnection.cs" />
+    <Compile Include="Net\NetListener.cs" />
+    <Compile Include="Net\NetManager.cs" />
+    <Compile Include="Session\SessionCommunicationStack.cs" />
+    <Compile Include="Session\SessionHandler.cs" />
+    <Compile Include="Session\SessionManager.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="ThorServiceInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThorServiceInstaller.Designer.cs">
+      <DependentUpon>ThorServiceInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThorService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThorService.Designer.cs">
+      <DependentUpon>ThorService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ArgumentEncoding.cs" />
+    <Compile Include="Utilities\Base64Encoding.cs" />
+    <Compile Include="Utilities\ClientMessage.cs" />
+    <Compile Include="Utilities\Conversion.cs" />
+    <Compile Include="Utilities\FuseMessage.cs" />
+    <Compile Include="Utilities\HighResolutionTime.cs" />
+    <Compile Include="Utilities\SettingsParser.cs" />
+    <Compile Include="Utilities\SpecialFiltering.cs" />
+    <Compile Include="Utilities\SpecialMath.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Language.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Language.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThorServiceInstaller.resx">
+      <DependentUpon>ThorServiceInstaller.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThorService.resx">
+      <DependentUpon>ThorService.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Schema.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Settings.conf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="UserSettings.conf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FuseRights.txt" />
+    <Content Include="Game\Moderation\ModeratorCommands.txt" />
+    <Content Include="INSTALL.da-dk.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="INSTALL.en-en.TXT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="INSTALL.nb-no.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ServerPackets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
